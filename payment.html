@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Placement</title>
+</head>
+<body>
+
+<h2>Order Place</h2>
+
+<form>
+    <label for="orderType">Select order type:</label><br>
+    <input type="radio" id="onlineOrder" name="orderType" value="online">
+    <label for="onlineOrder">Phonepay</label><br>
+    <input type="radio" id="inStoreOrder" name="orderType" value="inStore">
+    <label for="inStoreOrder">Gpay</label><br>
+    <input type="radio" id="inStoreOrder" name="orderType" value="inStore">
+    <label for="inStoreOrder">paytm</label><br>
+    <input type="radio" id="inStoreOrder" name="orderType" value="inStore">
+    <label for="inStoreOrder">cash on delivery</label><br>
+
+    <input type="button" value="Place Order" onclick="showAlert()">
+</form>
+
+<script>
+function showAlert() {
+    var orderType = document.querySelector('input[name="orderType"]:checked');
+    if (orderType) {
+        alert("Your order is placed");
+    } else {
+        alert("Please payment method");
+    }
+}
+</script>
+
+</body>
+</html>
