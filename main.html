@@ -1,0 +1,80 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <i class="fas fa-home"></i> Home
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html">
+                <i class="fas fa-shopping-cart id=cart"></i> Card
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="trackorder.html">
+                <i class="fas fa-shopping-basket"></i> Track Order
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="wishlist.html">
+                <i class="fas fa-heart"></i> Wishlist
+              </a>
+            </li>
+            
+
+          </ul>
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    <div class="femalet"  >
+      <div class="card" >
+        <img src="h1.jpg" height="300px" class="card-img-top" alt="female tshirts">
+        <div class="card-body">
+            <li><a href="addtocart.html">Female Tshirts</a></li>
+            <li><a href="addtocart1.html">Female jeans</a></li>
+            <li><a href="addtocart2.html">Female shoes</a></li>
+           </div>
+      </div>
+    </div>
+
+    <div class="females">
+        <div class="card">
+          <img src="m.jpg" height="300px" class="card-img-top" alt="female jeans">
+          <div class="card-body">
+            <li><a href="autocart4.html">Male Tshirts</a></li>
+            <li><a href="autocart5.html">Male Jeans</a></li>
+            <li><a href="autocart6.html">Male shoes</a></li>
+          </div>
+        </div>
+    </div>
+
+  </div >
+  <button id="logoutlink">Log out</button>
+</div>
+<script>
+  const orderLink = document.getElementById("logoutlink");
+  orderLink.addEventListener("click", function(event) {
+      event.preventDefault();
+      window.location.href = 'index.html';
+  });
+</script>
+
+    <script src="app.js"></script>
+    </body>
+    </html>
+    
+  
